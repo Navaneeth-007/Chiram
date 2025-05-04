@@ -7,7 +7,7 @@ const GALLERY_IMAGES = [
   { src: '/images/sindhu/gallery3.jpg', desc: 'With Crew at Chiram Movie Set' },
   { src: '/images/sindhu/gallery4.jpg', desc: 'With Crew at Chiram Movie Set' },
   { src: '/images/sindhu/gallery5.jpg', desc: 'With Crew at Chiram Movie Set' },
-  { src: '/images/sindhu/gallery6.jpg', desc: 'With Crew at Chiram Movie Set' },
+  { src: '/images/sindhu/gallery.jpg', desc: 'With Crew at Chiram Movie Set' },
   // Add more images and descriptions as needed
 ];
 
