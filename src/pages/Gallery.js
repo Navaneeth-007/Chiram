@@ -2,21 +2,21 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 
 const GALLERY_IMAGES = [
-  { src: '/images/gallery/gallery1.jpg', desc: '' },
-  { src: '/images/gallery/gallery2.jpg', desc: '' },
-  { src: '/images/gallery/gallery3.jpg', desc: '' },
-  { src: '/images/gallery/gallery4.jpg', desc: 'Producer and Crew' },
-  { src: '/images/gallery/gallery5.jpg', desc: 'Cast and Crew' },
-  { src: '/images/gallery/gallery6.jpg', desc: '' },
-  { src: '/images/gallery/gallery7.jpg', desc: '' },
-  { src: '/images/gallery/gallery8.jpg', desc: '' },
-  { src: '/images/gallery/gallery9.jpg', desc: '' },
-  { src: '/images/gallery/gallery10.jpg', desc: '' },
-  { src: '/images/gallery/gallery11.jpg', desc: '' },
-  { src: '/images/gallery/gallery12.jpg', desc: '' },
-  { src: '/images/gallery/gallery13.jpg', desc: '' },
-  { src: '/images/gallery/gallery14.jpg', desc: '' },
-  { src: '/images/gallery/gallery15.jpg', desc: '' },
+  { src: '/images/gallery/g1.jpg', desc: '' },
+  { src: '/images/gallery/g2.jpg', desc: '' },
+  { src: '/images/gallery/g3.jpg', desc: '' },
+  { src: '/images/gallery/g4.jpg', desc: 'Producer and Crew' },
+  { src: '/images/gallery/g5.jpg', desc: 'Cast and Crew' },
+  { src: '/images/gallery/g6.jpg', desc: '' },
+  { src: '/images/gallery/g7.jpg', desc: '' },
+  { src: '/images/gallery/g8.jpg', desc: '' },
+  { src: '/images/gallery/g9.jpg', desc: '' },
+  { src: '/images/gallery/g10.jpg', desc: '' },
+  { src: '/images/gallery/g11.jpg', desc: '' },
+  { src: '/images/gallery/g12.jpg', desc: '' },
+  { src: '/images/gallery/g13.jpg', desc: '' },
+  { src: '/images/gallery/g14.jpg', desc: '' },
+  { src: '/images/gallery/g15.jpg', desc: '' },
 
   // Add more images as needed
 ];
