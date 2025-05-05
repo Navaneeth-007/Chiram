@@ -33,6 +33,12 @@ const Team = () => (
           gap: 2rem;
         }
       }
+      @media (max-width: 700px) {
+        .team-section {
+          padding-left: 1.2rem;
+          padding-right: 1.2rem;
+        }
+      }
     `}</style>
   </section>
 );

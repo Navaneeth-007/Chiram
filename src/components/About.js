@@ -52,6 +52,12 @@ const About = ({ language, setLanguage }) => {
           line-height: 1.8;
           text-align: justify;
         }
+        @media (max-width: 700px) {
+          .section-inner {
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+          }
+        }
       `}</style>
     </section>
   );

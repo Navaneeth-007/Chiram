@@ -98,6 +98,12 @@ const WhyWatch = () => {
             grid-template-columns: 1fr 1fr;
           }
         }
+        @media (max-width: 700px) {
+          .section-inner {
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+          }
+        }
         @media (max-width: 600px) {
           .grid {
             grid-template-columns: 1fr;
