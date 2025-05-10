@@ -57,7 +57,8 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="copyright">
-            &copy; {new Date().getFullYear()} Chiram | Sathyajith Productions. All rights reserved.
+            &copy; {new Date().getFullYear()} Chiram | Sathyajith Productions.<br />
+            <span className="rights">All rights reserved.</span>
           </div>
           <div className="developer-credit">
             Developed by <a href="https://navaneeth-portfolio-ebon.vercel.app/" target="_blank" rel="noopener noreferrer">Navaneeth</a>
@@ -142,6 +143,11 @@ const Footer = () => {
           color: #fff;
           font-size: 0.9rem;
           margin-bottom: 0.5rem;
+          line-height: 1.5;
+        }
+        .rights {
+          display: block;
+          margin-top: 0.2em;
         }
         .developer-credit {
           color: #fff;

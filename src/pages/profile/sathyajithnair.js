@@ -13,7 +13,7 @@ const GALLERY_IMAGES = [
 
 const SATHYAJITH_PROFILE = {
   name: "Sathyajith Nair",
-  image: "/images/placeholder-producer1.jpg", // Update with actual path if needed
+  image: "/images/prod3.jpg", // Update with actual path if needed
   description: {
     english: `Sathyajith Nair, a dynamic entrepreneur and community leader, was born in Kerala, India, and spent his formative years in Bhilai. He later moved to the United States, where he pursued higher education in electrical engineering, earning both his undergraduate and master's degrees from the University of Oklahoma.
 

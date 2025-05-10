@@ -3,44 +3,74 @@ import movieData from '../data/movieData';
 import { Link } from 'react-router-dom';
 
 const Directors = () => (
-  <div className="team-card">
-    <h2 className="section-title">Directors</h2>
-    {movieData.directors.map((director, index) => (
-      <div className="profile-row" key={director.name} data-aos="fade-right" data-aos-delay={index * 100}>
-        <div className="profile-img-container">
-          <img src={director.image} alt={director.name} className="profile-img" />
-        </div>
-        <div className="profile-info">
-          <span className="profile-name">{director.name}</span>
-          <span className="profile-role">{director.role}</span>
-          {director.bio && <span className="profile-bio">{director.bio}</span>}
-          {director.name === "Sindhu Paradayil" && (
-            <Link
-              to="/SindhuProfile"
-              className="profile-btn"
-              target="_blank"
-            >
-              View Profile
-            </Link>
-          )}
+  <section className="section" id="directors">
+    <div className="section-inner">
+      <div className="team-card directors-card">
+        <h2 className="section-title">Directors</h2>
+        <div className="profile-row-group">
+          {movieData.directors.map((director, index) => (
+            <div className="director-card" key={director.name} data-aos="fade-right" data-aos-delay={index * 100}>
+              <div className="profile-row">
+                <div className="profile-img-container">
+                  <img src={director.image} alt={director.name} className="profile-img" />
+                </div>
+                <div className="profile-info">
+                  <span className="profile-name">{director.name}</span>
+                  <span className="profile-role">{director.role}</span>
+                  {director.bio && <span className="profile-bio">{director.bio}</span>}
+                  {director.name === "Sindhu Paradayil" && (
+                    <Link
+                      to="/SindhuProfile"
+                      className="profile-btn"
+                      target="_blank"
+                    >
+                      View Profile
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
+    </div>
     <style jsx>{`
+      .directors-card {
+        margin: 0 auto;
+        max-width: 900px;
+      }
       .team-card {
         background: var(--primary-bg);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow);
         padding: 2rem 1.5rem;
-        min-width: 340px;
-        max-width: 420px;
         width: 100%;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
       .section-title {
         margin-bottom: 1.5rem;
+      }
+      .profile-row-group {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        justify-content: center;
+        align-items: stretch;
+      }
+      .director-card {
+        background: #fff;
+        border-radius: 1.2rem;
+        box-shadow: 0 2px 12px rgba(34,34,34,0.07);
+        padding: 1.5rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 340px;
+        box-sizing: border-box;
       }
       .profile-row {
         display: flex;
@@ -58,7 +88,7 @@ const Directors = () => (
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 1.5rem;
+        margin-right: 0.7rem;
         flex-shrink: 0;
       }
       .profile-img {
@@ -70,8 +100,9 @@ const Directors = () => (
       .profile-info {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         flex: 1;
+        text-align: center;
       }
       .profile-name {
         font-size: 1.2rem;
@@ -100,21 +131,17 @@ const Directors = () => (
         color: #222;
       }
       @media (max-width: 700px) {
-        .profile-row {
+        .profile-row-group {
           flex-direction: column;
-          align-items: center;
-          text-align: center;
+          gap: 1.5rem;
         }
-        .profile-img-container {
-          margin-right: 0;
-          margin-bottom: 1rem;
-        }
-        .profile-info {
-          align-items: center;
+        .director-card {
+          max-width: 100%;
+          width: 100%;
         }
       }
     `}</style>
-  </div>
+  </section>
 );
 
 export default Directors;

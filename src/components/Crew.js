@@ -46,7 +46,10 @@ const Crew = () => (
             />
             <div className="gloss"></div>
           </div>
-          <span className="production-name">SATHYAJITH PRODUCTIONS</span>
+          <span className="production-name">
+            <span className="production-main">SATHYAJITH</span>
+            <span className="production-sub">PRODUCTIONS</span>
+          </span>
         </div>
       </div>
       <style jsx>{`
@@ -203,6 +206,18 @@ const Crew = () => (
           text-transform: uppercase;
           text-shadow: none;
           text-align: center;
+          display: block;
+        }
+        .production-main {
+          font-size: 2.2rem;
+          letter-spacing: 4px;
+          margin-right: 0.7rem;
+          display: inline;
+        }
+        .production-sub {
+          font-size: 2.2rem;
+          letter-spacing: 4px;
+          display: inline;
         }
         @media (max-width: 1100px) {
           .crew-section-inner {
@@ -223,6 +238,34 @@ const Crew = () => (
           .crew-row {
             flex-wrap: wrap;
             gap: 0.5rem;
+          }
+        }
+        @media (max-width: 700px) {
+          .crew-section-inner {
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+          }
+          .production-container {
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+          }
+          .production-name {
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+            word-break: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .production-main {
+            font-size: 1.5rem;
+            display: block;
+            margin-right: 0;
+            margin-bottom: 0.2em;
+          }
+          .production-sub {
+            font-size: 1.5rem;
+            display: block;
           }
         }
       `}</style>

@@ -27,7 +27,12 @@ const movieData = {
       {
         name: "Sathyajith Nair",
         role: "Producer",
-        image: "/images/placeholder-producer1.jpg",
+        image: "/images/prod3.jpg",
+      },
+      {
+        name: "Suresh Kumar",
+        role: "Co-Producer",
+        image: "/images/coprod.jpg",
       },
       {
         name: "Sajith Krishna",

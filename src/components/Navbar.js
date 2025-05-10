@@ -63,7 +63,7 @@ const Navbar = () => {
           )}
           <a href="#hero" className="nav-link" onClick={e => handleNav(e, "hero")}>Home</a>
           <a className="nav-link" href="#about" onClick={e => handleNav(e, "about")}>About</a>
-          <a href="#team" className="nav-link" onClick={e => handleNav(e, "team")}>Director & Producer</a>
+          <a href="#tdirectors" className="nav-link" onClick={e => handleNav(e, "directors")}>Director & Producer</a>
           <a className="nav-link" href="#cast" onClick={e => handleNav(e, "cast")}>Cast & Crew</a>
           <a className="nav-link" href="/gallery" onClick={closeMobileMenu}>Gallery</a>
           <a href="#why-watch" className="nav-link" onClick={e => handleNav(e, "why-watch")}>Why Watch</a>

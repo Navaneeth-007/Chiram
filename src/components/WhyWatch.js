@@ -56,6 +56,8 @@ const WhyWatch = () => {
           flex-direction: column;
           align-items: center;
           margin: 0;
+          width: 100%;
+          box-sizing: border-box;
         }
         .card:hover {
           box-shadow: 0 8px 24px 0 #FFD60033;
@@ -107,6 +109,9 @@ const WhyWatch = () => {
         @media (max-width: 600px) {
           .grid {
             grid-template-columns: 1fr;
+          }
+          .card {
+            margin-bottom: 1.5rem;
           }
         }
       `}</style>

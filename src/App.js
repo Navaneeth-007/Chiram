@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Cast from './components/Cast';
 import Crew from './components/Crew';
-import Team from './components/Team';
 import Directors from './components/Directors';
 import Producers from './components/Producers';
 import WhyWatch from './components/WhyWatch';
@@ -33,7 +32,8 @@ function MainPage({ language, setLanguage }) {
       <Navbar />
       <Hero />
       <About language={language} setLanguage={setLanguage} />
-      <Team />
+      <Directors />
+      <Producers />
       <Cast />
       <Crew />
       <WhyWatch />
