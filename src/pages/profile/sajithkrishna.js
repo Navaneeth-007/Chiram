@@ -102,7 +102,7 @@ const SajithKrishnaProfile = () => {
           {SAJITH_PROFILE.description[lang]
             .split('\n\n')
             .map((para, idx) => (
-              <p key={idx}>{para}</p>
+              <p key={idx} className="bio-paragraph">{para}</p>
             ))}
         </div>
       </div>
@@ -208,13 +208,16 @@ const SajithKrishnaProfile = () => {
           background: var(--accent-color, #FFD600);
           color: #222;
         }
-        .profile-bio p {
-          font-size: 1.08rem;
-          color: var(--text-main, #222);
+        .profile-bio {
           margin-top: 1.2rem;
-          text-align: justify;
+          font-size: 1.05rem;
+          color: #222;
           line-height: 1.7;
-          margin-bottom: 1.2em;
+          padding: 0;
+        }
+        .bio-paragraph {
+          margin-bottom: 1.1em;
+          text-align: justify;
         }
         .recent-works-section {
           width: 100%;
@@ -316,13 +319,24 @@ const SajithKrishnaProfile = () => {
           .recent-works-section {
             padding: 1.2rem 0.7rem;
             max-width: 100vw;
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
           }
           .filmography-section {
             max-width: 100vw;
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
           }
           .filmography-table th, .filmography-table td {
             font-size: 0.85rem;
             padding: 0.4em 0.3em;
+          }
+          .profile-bio {
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
+          }
+          .filmography-table-wrapper {
+            padding-right: 1.1rem;
           }
         }
       `}</style>

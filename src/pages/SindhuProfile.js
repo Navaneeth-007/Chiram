@@ -81,7 +81,7 @@ const SindhuProfile = () => {
           {SINDHU_PROFILE.description[lang]
             .split('\n\n')
             .map((para, idx) => (
-              <p key={idx}>{para}</p>
+              <p key={idx} className="bio-paragraph">{para}</p>
             ))}
         </div>
       </div>
@@ -169,13 +169,16 @@ const SindhuProfile = () => {
           background: var(--accent-color, #FFD600);
           color: #222;
         }
-        .profile-bio p {
-          font-size: 1.08rem;
-          color: var(--text-main, #222);
+        .profile-bio {
           margin-top: 1.2rem;
-          text-align: justify;
+          font-size: 1.05rem;
+          color: #222;
           line-height: 1.7;
-          margin-bottom: 1.2em;
+          padding: 0;
+        }
+        .bio-paragraph {
+          margin-bottom: 1.1em;
+          text-align: justify;
         }
         .gallery-section {
           width: 100%;
@@ -291,6 +294,10 @@ const SindhuProfile = () => {
           }
           .modal-arrow.right {
             right: 0.2rem;
+          }
+          .profile-bio {
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
           }
         }
       `}</style>
