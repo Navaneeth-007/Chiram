@@ -11,7 +11,7 @@ const Footer = () => (
             <a href="https://www.instagram.com/chiram_movie_official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram className="social-icon" />
             </a>
-            <a href="https://www.facebook.com/share/1ArWpuHsWG/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/1ArWpuHsWG/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebook className="social-icon" />
             </a>
           </div>
