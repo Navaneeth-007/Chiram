@@ -3,7 +3,14 @@ import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const handleSocialClick = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    // Create a temporary anchor element
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleEmailClick = (e) => {
@@ -18,20 +25,24 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Follow Us</h3>
             <div className="social-links">
-              <button 
-                onClick={() => handleSocialClick('https://www.instagram.com/chiram_movie_official/')}
+              <a 
+                href="https://www.instagram.com/chiram_movie_official/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-button"
                 aria-label="Instagram"
               >
                 <FaInstagram className="social-icon" />
-              </button>
-              <button 
-                onClick={() => handleSocialClick('https://www.facebook.com/share/1ArWpuHsWG/')}
+              </a>
+              <a 
+                href="https://www.facebook.com/share/1ArWpuHsWG/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-button"
                 aria-label="Facebook"
               >
                 <FaFacebook className="social-icon" />
-              </button>
+              </a>
             </div>
           </div>
 
