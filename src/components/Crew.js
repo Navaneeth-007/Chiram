@@ -267,6 +267,15 @@ const Crew = () => (
             font-size: 1.5rem;
             display: block;
           }
+          .crew-card {
+            font-size: 0.92rem;
+          }
+          .crew-role-title {
+            font-size: 0.98rem;
+          }
+          .crew-name {
+            font-size: 0.92rem;
+          }
         }
       `}</style>
     </div>
