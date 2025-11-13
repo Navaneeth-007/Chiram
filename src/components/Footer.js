@@ -43,6 +43,15 @@ const Footer = () => {
               >
                 <FaFacebook className="social-icon" />
               </a>
+              <a 
+                href="https://x.com/Chiram2025"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-button"
+                aria-label="Twitter"
+              >
+              <FaXTwitter className="social-icon" /> 
+              </a>
             </div>
           </div>
 
