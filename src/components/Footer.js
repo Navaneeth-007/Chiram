@@ -2,17 +2,6 @@ import React from 'react';
 import { FaInstagram, FaFacebook, FaEnvelope, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
-  const handleSocialClick = (url) => {
-    // Create a temporary anchor element
-    const link = document.createElement('a');
-    link.href = url;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const handleEmailClick = (e) => {
     e.preventDefault();
     window.location.href = 'mailto:chiramthemovie@gmail.com';
