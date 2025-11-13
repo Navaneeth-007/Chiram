@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaEnvelope, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const handleSocialClick = (url) => {
